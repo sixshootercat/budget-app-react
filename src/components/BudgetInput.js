@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Error from "./Error";
+import React, { useState } from 'react';
+import Error from './Error';
 
 const BudgetInput = ({ setBudget, setRemaining, setShowBudgetInput }) => {
   const [amount, setAmount] = useState(0);
@@ -21,7 +21,7 @@ const BudgetInput = ({ setBudget, setRemaining, setShowBudgetInput }) => {
     setBudget(amount);
     setRemaining(amount);
 
-    // Set budget input to false so it doesnt render
+    // Set budget input to false so it doesn't render
     setShowBudgetInput(false);
   };
 
@@ -31,19 +31,19 @@ const BudgetInput = ({ setBudget, setRemaining, setShowBudgetInput }) => {
 
   return (
     <>
-      <h2>Input your budget</h2>
-      {error ? <Error msg="There was an error" /> : null}
+      <h2>What's your budget</h2>
+      {error ? <Error msg='There was an error' /> : null}
       <form onSubmit={handleSubmit}>
         <input
-          type="number"
-          className="u-full-width"
+          type='number'
+          className='u-full-width'
           placeholder="What's your budget?"
           onChange={handleChange}
         />
         <input
-          type="submit"
-          className="button-primary u-full-width"
-          value="Submit"
+          type='submit'
+          className='button-primary u-full-width'
+          value='Submit'
         />
       </form>
     </>

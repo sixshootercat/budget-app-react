@@ -4,10 +4,10 @@
 body {
   background: #000428; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #004e92, #000428);
-  background: linear-gradient(to right, #004e92, #000428);
+  background: linear-gradient(to right, #004e92, #24284e);
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header {
   margin: 30px 0;
@@ -27,18 +27,18 @@ header {
 .budget p span {
   font-weight: normal;
 }
-#gastos {
+#expenses {
   margin-bottom: 30px;
 }
 h1 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Cairo', sans-serif;
   font-weight: 100;
   color: white;
   text-align: center;
   font-size: 4.8rem !important;
 }
 h2 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Cairo', sans-serif;
   font-weight: 100;
   color: #004e92;
   margin-bottom: 30px;

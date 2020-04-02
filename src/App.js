@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import BudgetInput from "./components/BudgetInput";
-import Form from "./components/Form";
-import ExpenseList from "./components/ExpenseList";
-import Balance from "./components/Balance";
+import React, { useState, useEffect } from 'react';
+import BudgetInput from './components/BudgetInput';
+import Form from './components/Form';
+import ExpenseList from './components/ExpenseList';
+import Balance from './components/Balance';
 
 const App = () => {
   const [budget, setBudget] = useState(0);
@@ -26,11 +26,11 @@ const App = () => {
   }, [expense]);
 
   return (
-    <div className="container">
+    <div className='container'>
       <header>
         <h1>Weekly Budget</h1>
 
-        <div className="main-container contenido">
+        <div className='main-container content'>
           {showBudgetInput ? (
             <BudgetInput
               setBudget={setBudget}
@@ -38,11 +38,11 @@ const App = () => {
               setShowBudgetInput={setShowBudgetInput}
             />
           ) : (
-            <div className="row">
-              <div className="one-half column">
+            <div className='row'>
+              <div className='one-half column'>
                 <Form setExpense={setExpense} setAddExpense={setAddExpense} />
               </div>
-              <div className="one-half column">
+              <div className='one-half column'>
                 <ExpenseList expenses={expenses} />
                 <Balance budget={budget} remaining={remaining} />
               </div>

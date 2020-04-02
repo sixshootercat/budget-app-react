@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
 const ExpenseDetail = ({ expense }) => (
-  <li className="expenses">
+  <li className='expenses'>
     <p>
       {expense.name}
-      <span className="expense">${expense.amount}</span>
+      <span className='expense'>${expense.amount}</span>
     </p>
   </li>
 );
