@@ -3,7 +3,7 @@ import ExpenseDetail from './ExpenseDetail';
 
 const ExpenseList = ({ expenses }) => {
   return (
-    <div className='expenses-realized'>
+    <div className='expenses'>
       <h2>List</h2>
       {expenses.map(expense => (
         <ExpenseDetail key={expense.id} expense={expense} />

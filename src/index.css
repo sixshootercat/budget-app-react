@@ -78,19 +78,19 @@ h2 {
   background-color: #fff3cd;
   border-color: #ffeeba;
 }
-.expenses-realized {
+.expenses {
   margin-bottom: 2rem;
 }
-.expenses-realized li {
+.expenses li {
   list-style: none;
   margin-bottom: 0rem;
   border-bottom: 1px solid #e1e1e1;
   padding: 1rem 0;
 }
-.expenses-realized li:last-of-type {
+.expenses li:last-of-type {
   margin-bottom: 0 !important;
 }
-.expenses-realized li p {
+.expenses li p {
   display: flex;
   justify-content: space-between;
   align-items: center;

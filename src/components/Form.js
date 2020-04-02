@@ -4,7 +4,7 @@ import Error from './Error';
 
 const Form = ({ setExpense, setAddExpense }) => {
   const [name, setName] = useState('');
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState('');
   const [error, setError] = useState(false);
 
   const handleSubmit = e => {
@@ -31,7 +31,7 @@ const Form = ({ setExpense, setAddExpense }) => {
     setAddExpense(true);
 
     setName('');
-    setAmount(0);
+    setAmount('');
   };
 
   return (
